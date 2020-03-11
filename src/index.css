@@ -1,0 +1,274 @@
+body {
+ 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(245, 245, 245, 0.452);
+  background-image: url(../src/img/pic1.jpg);
+  margin: 50px auto;
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button, input {
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0;
+}
+
+/* .all-post-container {
+    display: flex;
+    justify-content: center;
+} */
+
+
+.post-container {
+    background: white;
+    margin: 2% 20%;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    box-shadow:
+      /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+      display: flex;
+      padding: 1rem 2rem;
+}
+
+
+
+.title-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-child img {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+}
+
+.title-child p {
+    align-self: center;
+    padding: 5px;
+    color: #fc6076;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.btn-container div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form-item {
+    max-width: 400px;
+}
+
+.form-container {
+    background: white;
+    max-width :400px ;
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    box-shadow:
+      /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+.form-inner {
+    padding : 30px
+}
+
+.editBtn {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    background-blend-mode: multiply;
+    color: white;
+    background-color: none;
+    margin: 5px;
+    width: 5rem;
+    height: 2rem;
+}
+
+.deleteBtn {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    /* background-image: white; */
+    background-blend-mode: multiply;
+    color: black;
+    margin: 5px;
+    width: 5rem;
+    height: 2rem;
+    box-shadow: 2px 3px 6px 2px rgba(0,0,0,0.1);
+    font-size: 16px;
+    background: transparent;
+    transition: 0.2s;
+}
+
+h1 {
+    
+    font-weight: 700;
+    padding:20px;
+    color: 
+    #fc4444;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.1);
+    letter-spacing: 1.4;	
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);   
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.input-holder{
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+.input-text, textarea {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    color: black;
+    top: 18px;
+    font-size: 15px;
+
+}
+
+textarea{
+    min-height: 160px;
+    padding: 15px 0;
+    font-size: 15px;
+    
+}
+
+.label {
+    position: absolute;
+    text-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+    pointer-events:none;
+    transition:.2s ease all;
+    font-size:  16px;
+    color:
+    #fc4444;
+    top:-18px;
+    letter-spacing: 1;
+    line-height: 1.4rem;
+
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+}
+
+.postBtn,
+.cancelBtn,
+.addPost-btn {
+    cursor : pointer;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 2px 3px 6px 2px rgba(0,0,0,0.1);
+    font-size: 16px;
+    background: transparent;
+    transition: 0.2s;
+    margin: 5px;
+}
+
+.addPost-btn {
+    width: 20%;
+    margin: 1rem;
+}
+
+.deleteBtn:hover,
+.postBtn:hover,
+.cancelBtn:hover,
+.addPost-btn:hover,
+.editBtn:hover {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+}
+
+.cancelBtn:hover,
+.deleteBtn:hover {
+    color: #fc4444
+ }
+
+/* .deleteBtn:hover, */
+.postBtn:hover,
+.addPost-btn:hover,
+.editBtn:hover {
+    background: linear-gradient(to right, #fc6076 0%, #ff9a44 100%);
+  }
+
+/* .deleteBtn,   */
+.postBtn,
+.addPost-btn {
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    background-blend-mode: multiply;
+    color:white;
+}
+
+.deleteBtn:focus,
+.postBtn:focus,
+.cancelBtn:focus,
+.addPost-btn {
+    outline: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border-bottom: 2px solid #ff9a44 ;
+    
+}
+
+.title-text {
+    margin-bottom: 17px;
+}

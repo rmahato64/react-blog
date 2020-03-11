@@ -1,0 +1,6 @@
+echo "# react-blog" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rmahato64/react-blog.git
+git push -u origin master

@@ -1,0 +1,7 @@
+.home-page-display {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 2rem;
+}
